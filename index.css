@@ -5,25 +5,25 @@
 }
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;700&display=swap");
 
-body {
-  display: flex;
-  justify-content: center;
-}
 .faq {
   font-family: "Roboto", sans-serif;
   padding: 10%;
   height: 100vh;
   background-color: #e5e5e5;
+  margin: 0 auto;
 }
 @media (min-width: 960px) {
   .faq {
+    padding: 5%;
     max-width: 960px;
     display: flex;
+    padding-right: 0px;
   }
 }
 .faq > h2 {
   font-size: 38px;
   margin-bottom: 50px;
+  max-width: 250px;
 }
 @media (min-width: 960px) {
   .faq > h2 {
