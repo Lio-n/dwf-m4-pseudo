@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;700&display=swap");
+
+body {
+  display: flex;
+  justify-content: center;
+}
+.faq {
+  font-family: "Roboto", sans-serif;
+  padding: 10%;
+  height: 100vh;
+  background-color: #e5e5e5;
+}
+@media (min-width: 960px) {
+  .faq {
+    max-width: 960px;
+    display: flex;
+  }
+}
+.faq > h2 {
+  font-size: 38px;
+  margin-bottom: 50px;
+}
+@media (min-width: 960px) {
+  .faq > h2 {
+    margin-right: 90px;
+  }
+}
+
+.faq-item {
+  list-style: none;
+  margin-bottom: 23px;
+}
+
+.faq-item .faq-item-title a {
+  font-weight: 400;
+  font-size: 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.faq-item-title::before {
+  font-family: "Roboto Mono", monospace;
+  color: #ff6262;
+  content: ">";
+  font-size: 40px;
+}
+
+.faq-item-title {
+  margin-bottom: 15px;
+}
+
+.faq-item-text {
+  font-size: 20px;
+  display: none;
+}
+.faq-item:target .faq-item-text {
+  display: initial;
+}
